@@ -1,0 +1,111 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    zoom: 80%;
+}
+.linea{
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+.main-title{
+    position: fixed;
+    top: -35px;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    font-family: 'Old London',sans-serif;
+    font-size: 3.3em;
+    line-height: 1.2;
+    text-align: center;
+    padding: 10px 0;
+}
+.main-subtitle{
+    font-size: 2.6em;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0.5;
+}
+.main-img{
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.information{
+    margin-top: 110px;
+    font-size: 12px;
+}
+.paragraphStyle1{
+    max-width: 1100px;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.7em;
+    line-height: 1.6;
+}
+#frase{
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 60px;
+    
+}
+.paragraphStyle1 h3{
+    text-align: center;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+.redBold{
+    color: red;
+}
+span{
+    font-weight: bold;
+}
+.Cruella96{
+    float: left;
+    width: 80%;
+    max-width: 405px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-right: 20px;
+}
+.Cruella61{
+    float: right;
+    width: 80%;
+    max-width: 290px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-left: 20px;
+}
+.Cruella21{
+    float: right;
+    width: 80%;
+    max-width: 405px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-left: 20px;
+}
+.subtitle{
+    font-size: 1.2em;
+}
+.italic{
+    font-style: italic;
+}
+.footerMain{
+    color: white;
+    width: 100%;
+    background-color: black;
+    font-family: 'Old London',sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+    padding: 5px 0;
+}
