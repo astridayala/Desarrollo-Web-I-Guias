@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+header{
+    background-color: white;
+    text-align: center;
+}
+.title{
+    width: 100%;
+    font-family: 'Kenarose';
+    font-size: 45px;
+    position: fixed;
+    z-index: 1000;
+    height: 90px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    line-height: 2;
+}
+/*.subtitle{
+    font-family:'https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap';
+    font-size: px;
+}*/
