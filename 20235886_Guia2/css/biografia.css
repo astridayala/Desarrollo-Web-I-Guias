@@ -1,6 +1,10 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8FF;
+    zoom: 95%;
 }
 header{
     background-color: white;
@@ -13,13 +17,76 @@ header{
     position: fixed;
     z-index: 1000;
     height: 90px;
-    background-color: aquamarine;
+    background-color: #ADD8E6;
     margin: 0 auto;
     left: 0;
     top: 0;
     line-height: 2;
 }
-/*.subtitle{
-    font-family:'https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap';
-    font-size: px;
-}*/
+.linea{
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+section{
+    padding-top: 90px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+section article p{
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}
+.subtitle{
+    font-size: 26px;
+    font-weight: bold;
+}
+footer{
+    color: black;
+    width: 100%;
+    background-color: #B0C4DE;
+    font-family: 'Kenarose';
+    font-size: 1.2em;
+    text-align: center;
+    padding: 5px 0;
+    height: 50px;
+    line-height: 2.6;
+}
+.introduccion img{
+    float: left;
+    max-width: 290px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-right: 20px;
+    width: 210px;
+    height: 270px;
+} 
+.primerosAnios img{
+    width: 400px;
+    height: 290px;
+    display: block;
+    margin: 0 auto;
+}
+.Mates_Ciencias img{
+    width: 390px;
+    height: 290px;
+    display: block;
+    margin: 0 auto;
+}
+.Universidad img{
+    width: 220px;
+    height: 290px;
+    float: left;
+    margin-right: 15px;
+}
+section article{
+    padding: 1px;
+}
+h3{
+    font-family: 'Kenarose';
+    text-align: center;
+    font-size: 1.9em;
+}
