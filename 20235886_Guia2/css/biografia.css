@@ -7,7 +7,6 @@ body{
     zoom: 95%;
 }
 header{
-    background-color: white;
     text-align: center;
 }
 .title{
@@ -29,7 +28,7 @@ header{
     top: 0;
 }
 section{
-    padding-top: 90px;
+    padding-top: 5px;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -82,11 +81,24 @@ footer{
     float: left;
     margin-right: 15px;
 }
-section article{
-    padding: 1px;
+.menu{
+    padding-top: 120px;
+    margin-bottom: 70px;
+}
+nav span a{
+    border-right: 1px solid;
+    border-left: 1px solid;
+    color: black;
+    font-size: 1.2em;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 auto;
 }
 h3{
     font-family: 'Kenarose';
     text-align: center;
     font-size: 1.9em;
+}
+#bold{
+    font-weight: bold;
 }
