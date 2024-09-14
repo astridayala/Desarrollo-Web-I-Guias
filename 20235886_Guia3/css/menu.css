@@ -31,8 +31,12 @@ nav>ul>li{
     float: left;
 }
 /*Estilos de segundo nivel*/
-nav>ul>li:hover ul{
+nav>ul>li>ul{
     position: absolute;
-    display: none;
 }
-/*nos quedamos en el punto 20 del ejercicio 2*/
+nav>ul>li:hover ul{
+    display: block;
+}
+nav>ul>li>ul>li{
+    background-color: #222;
+}
