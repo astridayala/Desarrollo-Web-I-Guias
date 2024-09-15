@@ -10,7 +10,6 @@ h1{
 }
 .espacio{
     display: flex;
-    justify-content: space-between;
 }
 .guia{
     width: 45%;
