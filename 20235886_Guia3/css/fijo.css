@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-/*Estilos iniciales*/
+/*estilos iniciales*/
 body{
     margin: 0px;
     background-color: #BBB;
@@ -17,7 +17,7 @@ h1{
     color: #464D52;
 }
 
-/*Parte Superior*/
+/*parte Superior id=superior*/
 #superior{
     width: 100%;
     padding: 30px 0px;
@@ -39,4 +39,91 @@ h1{
     font-weight: bold;
     line-height: 180%;
     text-align: justify;
+}
+#imgDesc img{
+    float: left;
+}
+#imgDesc{
+    overflow: hidden;
+}
+/*contenido principal*/
+#contenido{
+    width: 960px;
+    margin: 0px auto;
+    clear: left;
+}
+/*footer*/
+footer{
+    text-align: center;
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 2;
+    clear: both;
+    background-color: #464D52;
+    color: white;
+    width: 100%;
+}
+/*contenido*/
+.plan{
+    width: 258px;
+    padding: 20px;
+    background-color: white;
+    margin: 30px 15px;
+    border-radius: 10px;
+    float: left;
+    text-align: justify;
+}
+#contenido div:nth-child(3n+1){
+    margin-left: 0px;
+}
+#contenido div:nth-child(3n){
+    margin-right: 0px;
+}
+.boton{
+    background-color: #464D52;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background 1s;
+}
+.boton:hover{
+    background: #5077C7;
+}
+.boton a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: block;
+}
+/*página PLANES*/
+.planes{
+    width: 900px;
+    background: white;
+    padding: 10px 30px;
+}
+.planes h1{
+    text-align: left;
+    font-size: 1.5em;
+}
+.planes .precio{
+    font-size: 1.1em;
+    margin: 20px 0px 5px;
+    padding-bottom: 15px;
+    border-bottom: solid 2px gray;
+    font-weight: bold;
+}
+/*página GALERIA*/
+#galeria .plan{
+    text-align: center;
+    font-style: italic;
+}
+#galeria .plan{
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding-bottom: 1px;
 }
