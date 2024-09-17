@@ -1,0 +1,71 @@
+body{
+    width: 30%;
+    margin: 0 auto;
+}
+h1{
+    width: 101%;
+}
+h1, .contenedor_1, .contenedor_2{
+    text-align: center;
+}
+.contenedor_1{
+    float:left
+}
+.contenedor_2{
+    float: right;
+}
+/*PRIMER RESULTADO*/
+.contenedor_1 #diez_de_diamantes{
+    position: relative;
+    right: 30px;
+}
+.contenedor_1 #sota_de_diamantes{
+    position: relative;
+    right: 15px; 
+    bottom: 85px;  
+}
+.contenedor_1 #reina_de_diamantes{
+    position: relative;
+    right: 5px;
+    bottom: 170px;
+}
+.contenedor_1 #rey_de_diamantes{
+    position: relative;
+    right: -10px;
+    bottom: 255px;
+}
+.contenedor_1 #as_de_diamantes{
+    position: relative;
+    right: -25px;
+    bottom: 340px;
+}
+/*SEGUNDO RESULTADO*/
+.contenedor_2 #diez_de_diamantes{
+    position: relative;
+    right: 30px;
+    z-index: 50;
+}
+.contenedor_2 #sota_de_diamantes{
+    position: relative;
+    right: 15px; 
+    bottom: 85px;
+    z-index: 40;
+}
+.contenedor_2 #reina_de_diamantes{
+    position: relative;
+    right: 5px;
+    bottom: 170px;
+    z-index: 30;
+}
+.contenedor_2 #rey_de_diamantes{
+    position: relative;
+    right: -10px;
+    bottom: 255px;
+    z-index: 20;
+}
+.contenedor_2 #as_de_diamantes{
+    position: relative;
+    right: -25px;
+    bottom: 340px;
+    z-index: 10;
+}
