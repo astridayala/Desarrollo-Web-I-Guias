@@ -26,17 +26,17 @@ h1, .contenedor_1, .contenedor_2{
 }
 .contenedor_1 #reina_de_diamantes{
     position: relative;
-    right: 5px;
+    right: 0px;
     bottom: 170px;
 }
 .contenedor_1 #rey_de_diamantes{
     position: relative;
-    right: -10px;
+    right: -15px;
     bottom: 255px;
 }
 .contenedor_1 #as_de_diamantes{
     position: relative;
-    right: -25px;
+    right: -30px;
     bottom: 340px;
 }
 /*SEGUNDO RESULTADO*/
@@ -53,19 +53,19 @@ h1, .contenedor_1, .contenedor_2{
 }
 .contenedor_2 #reina_de_diamantes{
     position: relative;
-    right: 5px;
+    right: 0px;
     bottom: 170px;
     z-index: 30;
 }
 .contenedor_2 #rey_de_diamantes{
     position: relative;
-    right: -10px;
+    right: -15px;
     bottom: 255px;
     z-index: 20;
 }
 .contenedor_2 #as_de_diamantes{
     position: relative;
-    right: -25px;
+    right: -30px;
     bottom: 340px;
     z-index: 10;
 }
