@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="formdatos">
+    <form action="ejercicio3.html" method="post">
+        <img src="img/foto-perfil.jpg" alt="Foto Perfil"><h1>Perfil</h1>
+        
+        <fieldset id="datos">
+            <legend>Datos</legend>
+            <table border="0">
+                <tr>
+                    <td>Fecha de Nacimiento:</td>
+                    <td><input type="date" name="apellido"></td>
+                </tr>
+                <tr>
+                    <td>Ingrese su foto:</td>
+                    <td><input type="file" name="foto"></td>
+                </tr>
+                <tr>
+                    <td>Nacionalidad:</td>
+                    <td>
+                        <input type="text" list="nacionalidad">
+                            <datalist id="nacionalidad">
+                                <option value="Salvadoreño">Salvadoreño(a)</option>
+                                <option value="Hondureño">Hondureño(a)</option>
+                                <option value="Guatemalteco">Guatemalteco(a)</option>
+                                <option value="Costarricense">Costarricense</option>
+                                <option value="Nicaraguense">Nicarag&uuml;ense</option>
+                                <option value="Panameño">Panameño(a)</option>
+                            </datalist>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset id="temas">
+        </fieldset>
+
+        <fieldset id="aficiones">
+        </fieldset>
+        <button class="boton" type="submit">
+            Enviar Información
+        </button>
+    </form>
+    
+</body>
+</html>
