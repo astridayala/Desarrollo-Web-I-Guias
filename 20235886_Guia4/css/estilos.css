@@ -1,0 +1,22 @@
+#login{
+    margin-top: 4%;
+    margin-left: 32%;
+    margin-right: 32%;
+}
+#login form{
+    width: 400px;
+    text-align: center;
+}
+#logindatos{
+    border: none;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color:lightgray;
+}
+#login .img{
+    margin: 18px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 0px;
+}
