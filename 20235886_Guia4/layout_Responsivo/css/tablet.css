@@ -40,9 +40,7 @@ nav ul li a#galeria{
 /*Parte superior*/
 #encabezado{
     margin: 0px auto;
-    width: 80%;
-    min-width: 650px;
-    max-width: 960px;
+    width: 90%;
 }
 #superior #encabezado #logo{
     margin: 2% 0px;
@@ -50,40 +48,34 @@ nav ul li a#galeria{
     height: auto;
 }
 #imgDesc img{
-    width: 62.5%;
+    width: 100%;
     height: auto;
-    float: left;
+    float: none;
 }
 #imgDesc{
     overflow: hidden;
 }
 #descripcion{
-    width: 37.5%;
-    background-color: #888;
-    float: left;
+    width: 100%;
 }
 #descripcion p{
-    margin: 5%;
+    margin: 20px 0px 10px 0px;
     color: white;
-    font-weight: bold;
-    line-height: 170%;
+    line-height: 140%;
     text-align: justify;
-    font-size: 0.95em;
+    font-size: 1em;
 }
 /*Contenido principal de las paginas*/
 #contenido{
-    width: 80%;
+    width: 90%;
     margin: 0px auto;
-    clear: left;
     overflow: auto;
-    min-width: 650px;
-    max-width: 960px;
 }
 /*Contenido de la pagina "index"*/
 .plan{
-    width: 26.7%;
-    padding: 2%;
-    margin: 30px 1.5%;
+    width: 94%;
+    padding: 1.5%;
+    margin: 20px 1.5%;
     background-color: white;
     border: solid 1px black;
     border-radius: 10px;
@@ -91,7 +83,14 @@ nav ul li a#galeria{
     text-align: justify;
 }
 .plan img{
-    width: 100%;
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+.boton{
+    width: 40%;
+    float: right;
 }
 /*Primer div, cuarto div, septimo div,...*/
 #contenido div:nth-child(3n+1){
