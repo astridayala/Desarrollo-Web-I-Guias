@@ -1,7 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap'); /*Texto normal*/
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+html{
+    font-family: Mulish;
+    font-size: 20px;
+    text-align: justify;
+}
+h3{
+    font-family: Monoton;
+    font-size: 50px;
+    font-weight: 200;
+}
+h4{
+    font-family: Holtwood One SC;
+    font-size: 30px;
+}
+h5{
+    font-family: Bowlby One SC;
+    font-size: 30px;
+    font-weight: 100;
+}
+h6{
+    font-family: Rye;
+    font-size: 30px;
+}
+h7{
+    font-family: Montserrat Subrayada;
+    font-size: 30px;
+}
+h8{
+    font-family: Castoro Titling;
+    font-size: 30px;
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
