@@ -52,11 +52,19 @@ body{
     background-color: var(--color8);
 }
 .inicio, .FODA, .retroalimentacion, .recursos{
-    margin: 0% 15% 0% 15%;
+    margin: 0% 14.5% 0% 14.5%;
 }
 .inicio{
-    margin: 0% 15% 0% 15%;
+    margin: 0% 14.5% 0% 14.5%;
     padding-top: 100px;
+}
+.guias div{
+    float: left;
+    width: 45%;
+    margin: 10px;
+}
+.FODA{
+    clear: both;
 }
 
 
