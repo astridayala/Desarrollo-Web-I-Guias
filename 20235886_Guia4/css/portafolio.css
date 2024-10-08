@@ -6,11 +6,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
 
+:root{
+    --color1: #000;
+    --color2: #fff;
+    --color3: #2b2d47;
+    --color4: #3f3f73;
+    --color5: #5a5c90;
+    --color6: #9a9db5;
+    --color7: #b8bed0;
+    --color8: #f5f5f7;
+    --color9: #f7e359;
+    --color10: #70c7ae;
+}
 html{
     font-family: Mulish;
     font-size: 20px;
     text-align: justify;
 }
+.title{
+    width: 100%;
+    background-color: var(--color5);
+    position: fixed;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding:-5px;
+    height: 100px;
+}
+#portafolio{
+    margin-top: 19px;
+    float: left;
+    font-family: Monoton;
+    font-weight: 200;
+    margin-left: 200px;
+}
+#nombre{
+    font-family: Montserrat Subrayada;
+    margin-right: 200px;
+    font-size: 1.2em;
+    float: right;
+    padding-top: 20px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--color8);
+}
+.inicio, .FODA, .retroalimentacion, .recursos{
+    margin: 0% 15% 0% 15%;
+}
+.inicio{
+    margin: 0% 15% 0% 15%;
+    padding-top: 100px;
+}
+
+
+
+
+
+
+
+
 h3{
     font-family: Monoton;
     font-size: 50px;
