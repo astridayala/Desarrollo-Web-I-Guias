@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/portafolio.css">
+    <link type="text/css" rel="stylesheet" href="css/celular.css" media="screen and (max-width:480px)">
+    <link type="text/css" rel="stylesheet" href="css/tablet.css" media="screen and (min-width:481px) and (max-width:768px)">
+    <link type="text/css" rel="stylesheet" href="css/pc.css" media="screen and (min-width:769px)">
     <title>Portafolio Estudiantil</title>
 </head>
 <body>
@@ -14,6 +17,7 @@
         </div>
     </header>
     <section class="inicio">
+        <h1 class="subtitle">~~ Introducción ~~</h1>
         <article>
             <p>
                 Mi nombre es Astrid Ayala, tengo 20 años y actualmente estudió una Ingeniería de Software y Negocios Digitales en la Escuela Superior
@@ -22,6 +26,7 @@
             </p>
         </article>
         <article>
+            <img class="img-computadora" src="img/computadora.png" alt="Computadora">
             <p>
                 La materia de <span class="bold">Desarrollo Web I</span> es impartida por el catedrático <span class="bold">Guillermo Calderón</span> 
                 y cubre los fundamentos básicos de los lenguajes <span class="bold">HTML, CSS y JavaScript</span>, los cuales son los elementos esenciales
@@ -30,7 +35,7 @@
                 JavaScript, nosotros vamos a poder crear aplicaciones interactivas de <span class="italic">front-end</span> y nos introduciremos en 
                 el contenido dinámico.
             </p>
-            <p>
+            <p class="img-parrafo">
                 Por otro lado, el curso se divide en seis unidades las cuales son las siguientes: 
                 <ul>
                     <li><span class="bold">Unidad 1: </span> Introducción a <HTML></HTML></li>
@@ -49,6 +54,7 @@
             </p>
         </article>
         <article class="guias">
+            <h1 class="subtitle">~~ Guías de Ciclo ~~</h1>
             <div>
                 <h2>Guía 1</h2>
                 <p>
@@ -57,7 +63,7 @@
                     toda la página y es el mejor método. Al mismo tiempo, creamos una página en donde se describe un poco sobre cada país perteneciente 
                     al continente centroamericano y en otro sitio web describimos nuestro película, saga o anime favorita, en mi caso describí un poco 
                     de <span class="bold">Cruella de Vil</span>, la versión de Emma Stone.
-                    <ul>
+                    <ul id="listas">
                         <li><a href="../20235886_Guia1/estilos_embebidos.html">Estilos embebidos</a></li>
                         <li><a href="../20235886_Guia1/estilos_embebidos_css.html">Estilos embebidos CSS</a></li>
                         <li><a href="../20235886_Guia1/paises.html">Países</a></li>
@@ -71,7 +77,7 @@
                     En la segunda guía, primeramente creamos una página describiendo un poco sobre la película de "El discurso del Rey", en la cual el
                     director es <span class="bold">Tom Hooper</span>. En el otro sitio web, creamos un tablero de damas y, por último, cada una creo su
                     biografía, hablando un poco de nuestra vida, experiencias y un poco de planes futuros.
-                    <ul>
+                    <ul id="listas">
                         <li><a href="../20235886_Guia2/pelicula.html">Película</a></li>
                         <li><a href="../20235886_Guia2/tablero.html">Tablero de Damas</a></li>
                         <li><a href="../20235886_Guia2/biografia.html">Mi Biografía</a></li>
@@ -82,12 +88,11 @@
                 <h2>Guía 3</h2>
                 <p>
                     En la tercera guía, el primer ejercicio mencionamos y describimos un poco sobre las películas que fueron nominadas a los Oscares.
-                    En el siguiente ejercicio, creamos un menú en donde se mencionan los 14 departamento de El Salvador y los países de Centroamérica.
-                    En el tercer ejercicio, creamos una página en la cual hay diferentes destinos turísticos de El Salvador, los cuales se adaptan a
-                    cualquier presupuesto, tiempo y gustos. Por otro lado, en el cuarto ejercicio utilizamos <span class="bold">z-index</span> y 
-                    <span class="bold">position</span> para que unas cartas de poker se observarán de diferentes maneras. Finalmente, en el último
-                    ejercicio, volvimos el tercer ejercicio, el cual era fijo, en un diseño Fluido.
-                    <ul>
+                    En el siguiente ejercicio, creamos un menú en donde se mencionan los departamento de El Salvador y los países de Centroamérica.
+                    En el tercer ejercicio, creamos una página con diferentes destinos turísticos de El Salvador. Asimismo, en el 
+                    cuarto ejercicio utilizamos <span class="bold">z-index</span> y <span class="bold">position</span> en unas cartas de poker, y en
+                    el último ejercicio, volvimos el tercer ejercicio en un diseño Fluido.
+                    <ul id="listas">
                         <li><a href="../20235886_Guia3/oscares.html">Premios Oscar</a></li>
                         <li><a href="../20235886_Guia3/menu_horizontal.html">Menú Horizontal</a></li>
                         <li><a href="../20235886_Guia3/index.html">Viajeros</a></li>
@@ -103,7 +108,7 @@
                     de elementos. En el quinto ejercicio, creamos una página responsiva, la cual se adapta a los diferentes tamaños de pantalla de
                     los dispositivos, es decir, celular, tablet y computadoras. Como último ejercicio, utilizamos el tercer ejercicio de la guía
                     anterior y lo transformamos en un diseño responsivo, igual que el ejercicio número cinco.
-                    <ul>
+                    <ul id="listas">
                         <li><a href="../20235886_Guia4/ejercicio1.html">Formulario</a></li>
                         <li><a href="../20235886_Guia4/ejercicio2.html">Controles de Formulario</a></li>
                         <li><a href="../20235886_Guia4/ejercicio3.html">Envío</a></li>
@@ -116,6 +121,7 @@
         </article>
     </section>
     <section class="FODA">
+        <h1 class="subtitle">~~ Análisis FODA ~~</h1>
         <article>
             <h2>Fortalezas</h2>
             <p>
@@ -153,6 +159,7 @@
         </article>
     </section>
     <section class="retroalimentacion">
+        <h1 class="subtitle">~~ Retroalimentación del Curso ~~</h1>
         <article>
             <h2>Lo que me gustó</h2>
             <p>
@@ -191,6 +198,7 @@
         </article>
     </section>
     <section class="recursos">
+        <h1 class="subtitle">~~ Aprendizaje continuo ~~</h1>
         <article>
             <h2>Recursos adicionales</h2>
             <p>
@@ -211,11 +219,8 @@
             </p>
         </article>
     </section>
-    <h3>Hola</h3>
-    <h4>Hola</h4>
-    <h5>Hola</h5>
-    <h6>Hola</h6>
-    <h7>Hola</h7>
-    <h8>Hola</h8>
 </body>
+<footer>
+    <h3>Astrid Ayala - 20235886</h3>
+</footer>
 </html>
