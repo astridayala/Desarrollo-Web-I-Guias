@@ -12,7 +12,7 @@ function capturarDatos(){
 }
 function dibujarParrafo(){
     let parrafo = prompt(
-        "Hola Mundo"
+        "Escriba su parrafo en el espacio habilitado"
     )
     const p = document.querySelector('#idParrafo')
     p.innerHTML = parrafo;
