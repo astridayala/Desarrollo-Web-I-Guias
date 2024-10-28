@@ -2,9 +2,10 @@
 const generarFila = (tipo, fila, columnas) => {
     let tr = `<tr>`
     for (let c = 0; c <= columnas; c++){
+        //imprimir encabezados
         if (tipo == 1){
             if (c == 0){
-                tr += `<th scope="col" class="text-center>#</th>"`;
+                tr += `<th scope="col" class="text-center">#</th>`;
             } else {
                 tr += `<th scope="col" class="text-center">Titulo ${c}</th>`
             }

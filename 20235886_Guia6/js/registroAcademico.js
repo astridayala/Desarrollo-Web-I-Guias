@@ -70,11 +70,11 @@ document.addEventListener("DOMContentLoaded", function(){
                 apellidos = arrayEstudiantes[i][2]
 
                 table += `<tr>`
-                table += `<td scope='row style='font-weight:bold'>${i+1}</td>`
+                table += `<td scope='row style='font-weight:bold;'>${i+1}</td>`
                 table += `<td>${carnet}</td>`
                 table += `<td>${nombres}</td>`
                 table += `<td>${apellidos}</td>`
-                table += `</tr>`
+                table += `</tr>`;
             }
             table += "</tbody>"
             table += "</table>"

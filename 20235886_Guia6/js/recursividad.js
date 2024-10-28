@@ -21,6 +21,11 @@ campo.addEventListener("keypress", validarNumero)
 //trabajar con el boton Calcular
 const boton = document.getElementById("idBtnCalcular")
 
+//definir una funcion anonimo para calcular el factorial de un numero
+function calcularFactorial(numero){
+    return numero < 2 ? 1 : numero * calcularFactorial(numero - 1)
+}
+
 //definir una funcion de tipo fecha para imprimir el resultado del factorial
 const imprimir = (numero, resultado) => {
     const contenedor = document.getElementById("idDivResultado")
