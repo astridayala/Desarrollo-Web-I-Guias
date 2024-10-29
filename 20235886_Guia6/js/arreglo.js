@@ -22,6 +22,8 @@ function agregarElemento(){
         arreglo.push(numero)
 
         //utilizar API DOM para crear un elemento html
+        //SE CREARON LOS DIV DONDE SE ALMACENAN LOS NUMEROS
+        //CREAR NUEVOS ELEMENTOS HTML
         let caja = document.createElement("div") //crear elemento div
         caja.className = "col-md-1 colum" //agregar una clase al elemento div
         let valor =  document.createElement("h3") //crear elemento h3

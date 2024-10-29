@@ -19,27 +19,32 @@ document.addEventListener("DOMContentLoaded", function(){
     function addEstudiantes(){
         const inputCarnet = document
             .querySelector("#inputCarnet")
-            .value.toString()
+            .value.toString().trim()
             .toUpperCase()
         const inputNombre = document
             .querySelector("#inputNombre")
-            .value.toString()
+            .value.toString().trim()
             .toUpperCase()
         const inputApellidos = document
             .querySelector("#inputApellidos")
-            .value.toString()
+            .value.toString().trim()
             .toUpperCase()
+        console.log(inputApellidos)
         
         if (inputCarnet != "" && inputNombre != "" && inputApellidos != ""){
-            arrayEstudiantes.push(
-                new Array(inputCarnet, inputNombre, inputApellidos)
-            )
+            const estudiante = {
+                carnet: inputCarnet,
+                nombre: inputNombre,
+                apellido: inputApellidos,
+            }
+            arrayEstudiantes.push(estudiante)
             alert("Se registro el nuevo estudiante")
             //limpiar campos del formulario
             document.querySelector("#inputCarnet").value = ""
             document.querySelector("#inputNombre").value = ""
             document.querySelector("#inputApellidos").value = ""
             document.querySelector("#inputCarnet").focus()
+            viewEstudiantes()
         } else {
             alert("Faltan campos que completar")
         }
@@ -61,19 +66,20 @@ document.addEventListener("DOMContentLoaded", function(){
             table += "</tr>"
             table += "</thead>"
             table += "<tbody>"
+            
+            let i = 0
 
             //utilizaremos un bucle for para recorrer el arreglo de estudiantes
-            for (let i = 0; i < arrayEstudiantes.length; i++){
-                //posiciones del arreglo
-                carnet = arrayEstudiantes[i][0]
-                nombres = arrayEstudiantes[i][1]
-                apellidos = arrayEstudiantes[i][2]
+            for (const estudiante of arrayEstudiantes) {
+                i++;
+                //destructuracion
+                let {carnet, nombre, apellido} = estudiante;
 
                 table += `<tr>`
-                table += `<td scope='row style='font-weight:bold;'>${i+1}</td>`
+                table += `<td scope='row style='font-weight:bold;'>${i}</td>`
                 table += `<td>${carnet}</td>`
-                table += `<td>${nombres}</td>`
-                table += `<td>${apellidos}</td>`
+                table += `<td>${nombre}</td>`
+                table += `<td>${apellido}</td>`
                 table += `</tr>`;
             }
             table += "</tbody>"
@@ -82,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function(){
         } else {
             alert("No se han registrado estudiantes")
         }
+        console.log(arrayEstudiantes)
     }
 
 })

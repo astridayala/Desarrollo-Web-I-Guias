@@ -12,9 +12,7 @@ function generarEstudiantes(){
     //arreglo para guardar informacion del estudiante
     let arrayEstudiantes = new Array();
 
-    let totalEstudiantes = document.querySelector(
-        "#inputNumeroEstudiantes"
-    ).value;
+    let totalEstudiantes = document.querySelector("#inputNumeroEstudiantes").value;
     let contador = 1;
 
     //while para recorrer el total de estudiantes
@@ -33,10 +31,7 @@ function generarEstudiantes(){
         } while (isNaN(convertir) || convertir < 0 || convertir > 10)
 
         //asignar valores al arreglo
-        arrayEstudiantes[contador - 1] = new Array(
-            estudiante,
-            parseFloat(calificacion).toFixed(2)
-        );
+        arrayEstudiantes.push(new Array(estudiante, parseFloat(calificacion)))
         contador++;
     }
     //recorre el arreglo con "for of"
@@ -47,15 +42,16 @@ function generarEstudiantes(){
 
     let listado = "<h3>Listado de estudiantes registrados</h3>"
     listado += "<ol>"
-    for (let indice of arrayEstudiantes){
-        let nombre = indice[0];
-        let nota = indice[1];
+    for (let estudiante of arrayEstudiantes){
+        let nombre = estudiante[0];
+        let nota = estudiante[1];
         //imprimir lista de estudiantes
         listado += `<li><b>Nombre:</b> ${nombre} - <b>Calificación:</b> ${nota}</li>`
 
         //verificar la calificacion mas alta
         if (nota > calificacionAlta){
-            posicion = indice;
+            posicion = estudiante;
+            calificacionAlta = nota;
         }
 
         //calcular promedio
