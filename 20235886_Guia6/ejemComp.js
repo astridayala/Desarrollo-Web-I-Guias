@@ -24,12 +24,27 @@ document.addEventListener("DOMContentLoaded", function() {
         const inputApellidos = document.querySelector("#inputApellidos")
         .value.trim()
         .toUpperCase();
+        const inputDUI = document.querySelector("#inputDUI")
+        .value.trim();
+        const inputNIT = document.querySelector("#inputNIT")
+        .value.trim();
+        const inputFechaNacimiento = document.querySelector("#inputFechaNacimiento")
+        .value.trim();
+        const inputCorreoElectronico = document.querySelector("#inputCorreoElectronico")
+        .value.trim();
+        const inputEdad = document.querySelector("#inputEdad")
+        .value.trim();
 
-        if (inputCarnet && inputNombre && inputApellidos) {
+        if (inputCarnet && inputNombre && inputApellidos && inputDUI && inputNIT && inputFechaNacimiento && inputCorreoElectronico && inputEdad) {
             const estudiante = {
                 carnet: inputCarnet,
                 nombre: inputNombre,
                 apellido: inputApellidos,
+                dui: inputDUI,
+                nit: inputNIT,
+                fechaNac: inputFechaNacimiento,
+                correo: inputCorreoElectronico,
+                edad: inputEdad
             };
             arrayEstudiantes.push(estudiante);
             alert("Se registró el nuevo estudiante");
@@ -38,6 +53,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector("#inputCarnet").value = "";
             document.querySelector("#inputNombre").value = "";
             document.querySelector("#inputApellidos").value = "";
+            document.querySelector("#inputDUI").value = "";
+            document.querySelector("#inputNIT").value = "";
+            document.querySelector("#inputFechaNacimiento").value = "";
+            document.querySelector("#inputCorreoElectronico").value = "";
+            document.querySelector("#inputEdad").value = "";
             document.querySelector("#inputCarnet").focus();
 
             viewEstudiantes();
@@ -57,6 +77,11 @@ document.addEventListener("DOMContentLoaded", function() {
             table += "<th scope='col' style='width: 15%;'>Carnet</th>";
             table += "<th scope='col'>Nombres</th>";
             table += "<th scope='col'>Apellidos</th>";
+            table += "<th scope='col'>DUI</th>";
+            table += "<th scope='col'>NIT</th>";
+            table += "<th scope='col'>Fecha de Nacimiento</th>";
+            table += "<th scope='col'>Correo electrónico</th>";
+            table += "<th scope='col'>Edad</th>";
             table += "</tr>";
             table += "</thead>";
             table += "<tbody>";
@@ -74,6 +99,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 table += `<td>${carnet}</td>`;
                 table += `<td>${nombre}</td>`;
                 table += `<td>${apellido}</td>`;
+                table += `<td>${dui}</td>`;
+                table += `<td>${nit}</td>`;
+                table += `<td>${fechaNac}</td>`;
+                table += `<td>${correo}</td>`;
+                table += `<td>${edad}</td>`;
                 table += `</tr>`;
             }
             table += "</tbody>";

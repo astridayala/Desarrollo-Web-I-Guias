@@ -12,6 +12,8 @@ const buttonAgregarPaciente = document.getElementById("idBtnAgregar")
 const buttonLimpiarPaciente = document.getElementById("idBtnLimpiar")
 const buttonMostrarPaciente = document.getElementById("idBtnMostrar")
 const buttonAgregarPais = document.getElementById("idBtnAddPais")
+const buttonEditarPaciente = document.getElementById("idBtnEditar")
+const buttonEliminarPaciente = document.getElementById("idBtnEliminar")
 
 const notificacion = document.getElementById("idNotificacion")
 //componente de Bootstrap
@@ -156,6 +158,17 @@ const addPais = () => {
         toast.show()
     }
 }
+//funcion que permite editar la informacion del paciente
+function editarPaciente(){
+
+}
+//funcion que permite elimianar un paciente
+function eliminarPaciente(id){
+    arrayPaciente = arrayPaciente.filter((paciente) => paciente.id) !== id
+    imprimirPacientes()
+    mensaje.innerHTML("Paciente eliminado exitosamente")
+    toast.show()
+}
 
 //agregar eventos a los botones y utilizar funciones tipo flecha
 buttonLimpiarPaciente.onclick = () => {
@@ -170,7 +183,12 @@ buttonMostrarPaciente.onclick = () => {
 buttonAgregarPais.onclick = () => {
     addPais()
 }
-
+buttonEditarPaciente.onclick = () => {
+    editarPaciente()
+}
+buttonEliminarPaciente.onclick = () => {
+    eliminarPaciente()
+}
 //agregar el focus en el campo nombre pais del modal
 idModal.addEventListener("show.bs.modal", () => {
     inputNombrePais.value = ""

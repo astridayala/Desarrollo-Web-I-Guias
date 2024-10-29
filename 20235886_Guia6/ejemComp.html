@@ -5,43 +5,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../css/styles.css" rel="stylesheet" />
-    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="img/js.png" sizes="32x32" type="image/png" />
     <title>Utilizando estructuras de control</title>
 </head>
 
 <body>
     <main class="d-flex flex-nowrap">
         <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark nav-bar">
-            <a href="../index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <img src="../img/js.png" alt="" width="32" height="32" class="me-2" />
+            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <img src="img/js.png" alt="" width="32" height="32" class="me-2" />
                 <span class="fs-4">JavaScript</span>
             </a>
             <hr />
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="../pages/registroAcademico.html" class="nav-link text-white active">
+                    <a href="pages/registroAcademico.html" class="nav-link text-white active">
                         <i class="bi bi-file-spreadsheet" role="img" aria-label="RegistroAcademico"></i>
                         Registro académico
-                    </a>
-                </li>
-                <li>
-                    <a href="../pages/tablasMultiplicar.html" class="nav-link text-white">
-                        <i class="bi bi-person-workspace" role="img" aria-label="TablasMultiplicar"></i>
-                        Tablas de multiplicar
-                    </a>
-                </li>
-                <li>
-                    <a href="../pages/promedioNotas.html" class="nav-link text-white">
-                        <i class="bi bi-file-earmark-medical" role="img" aria-label="Promedio"></i>
-                        Promedio notas
-                    </a>
-                </li>
-                <li>
-                    <a href="../pages/arreglo.html" class="nav-link text-white">
-                        <i class="bi bi-box" role="img" aria-label="Arreglo"></i>
-                        Arreglo
                     </a>
                 </li>
             </ul>
@@ -56,7 +38,7 @@
                                 <div class="row mb-3">
                                     <label for="inputCarnet" class="col-sm-2 col-form-label">Carnet</label>
                                     <div class="col-sm-10">
-                                        <input type="number" class="form-control" id="inputCarnet" maxlength="8" />
+                                        <input type="text" class="form-control" id="inputCarnet" maxlength="5" />
                                     </div>
                                 </div>
                                 <div class="row mb-3">
@@ -69,6 +51,36 @@
                                     <label for="inputApellidos" class="col-sm-2 col-form-label">Apellidos</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" id="inputApellidos" pattern="^[a-zA-Z]+$" />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputDUI" class="col-sm-2 col-form-label">DUI</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputDUI" pattern="^\d{8}-\d{1}$" />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputNIT" class="col-sm-2 col-form-label">NIT</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputNIT" pattern="^\d{4}-\d{6}-\d{3}-\d{1}$" />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputFechaNacimiento" class="col-sm-2 col-form-label">Fecha de Nacimiento</label>
+                                    <div class="col-sm-10">
+                                        <input type="date" class="form-control" id="inputFechaNacimiento" />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputCorreoElectronico" class="col-sm-2 col-form-label">Correo electrónico</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="inputCorreoElectronico" pattern="^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$" />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputEdad" class="col-sm-2 col-form-label">Edad</label>
+                                    <div class="col-sm-10">
+                                        <input type="number" class="form-control" id="inputEdad" />
                                     </div>
                                 </div>
 
@@ -92,8 +104,8 @@
         </div>
     </main>
 
-    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/registroAcademico.js" defer></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/registroAcademico.js" defer></script>
 </body>
 
 </html>
