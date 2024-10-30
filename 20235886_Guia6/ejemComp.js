@@ -137,3 +137,61 @@ function formatoNIT() {
     inputNIT.value = nit;
 }
 
+function formulario(){
+    
+    const carnetFormato = /^[A-Z]{2}\d{3}$/
+    const carnet = document.getElementById("inputCarnet")
+    .value.trim()
+    .toUpperCase()
+    if (!carnetFormato.test(carnet)) {
+        alert("Carnet incorrecto (por ejemplo, AB001)");
+        return false;
+    }
+
+    const nombreApellidoFormato = /^[a-zA-Z]+$/
+    const nombre = document.getElementById("inputNombre")
+    .value.trim()
+    const apellidos = document.getElementById("inputApellidos")
+    .value.trim()
+    if (!nombreApellidoFormato.test(nombre)) {
+        alert("El nombre solo posee letras");
+        return false;
+    }
+    if (!nombreApellidoFormato.test(apellidos)) {
+        alert("Los apellidos solo poseen letras");
+        return false;
+    }
+
+    const correoFormato = /^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/
+    const correo = document.getElementById("inputCorreoElectronico")
+    .value.trim()
+    if (!correoFormato.test(correo)) {
+        alert("Correo electrónico inválido (correo@gmail.com).");
+        return false;
+    }
+
+    const DUIFormato = /^\d{8}-\d$/
+    const dui = document.getElementById("inputDUI")
+    .value.trim()
+    if (!DUIFormato.test(dui)) {
+        alert("DUI invaludo (########-#).");
+        return false;
+    }
+
+    const NITFormato = /^\d{4}-\d{6}-\d{3}-\d$/
+    const nit = document.getElementById("inputNIT")
+    .value.trim()
+    if (!NITFormato.test(nit)) {
+        alert("NIT invalido (####-######-###-#).");
+        return false;
+    }
+
+    const edad = document.getElementById("inputEdad")
+    .value.trim()
+    if (isNaN(edad) || edad === "" || edad <= 0) {
+        alert("La edad es un número positivo.");
+        return false;
+    }
+    return true
+
+}

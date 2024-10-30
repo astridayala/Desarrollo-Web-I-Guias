@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
             for (const estudiante of arrayEstudiantes) {
                 i++;
                 // Desestructuración
-                let { carnet, nombre, apellido, dui, nit, fechaNac, correo, edad } = estudiante;
+                let { carnet, nombre, apellido } = estudiante;
 
                 table += `<tr>`;
                 table += `<td scope='row' style='font-weight:bold;'>${i}</td>`;
