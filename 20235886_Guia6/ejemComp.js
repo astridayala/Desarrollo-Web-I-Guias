@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
             table += "<thead>";
             table += "<tr>";
             table += "<th scope='col' style='width: 5%;'>#</th>";
-            table += "<th scope='col' style='width: 15%;'>Carnet</th>";
+            table += "<th scope='col'>Carnet</th>";
             table += "<th scope='col'>Nombres</th>";
             table += "<th scope='col'>Apellidos</th>";
             table += "<th scope='col'>DUI</th>";
@@ -114,3 +114,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 });
+
+function formatoDUI() {
+    const inputDUI = document.getElementById("inputDUI");
+    let dui = inputDUI.value.replace(/\D/g, ''); 
+    if (dui.length > 8) {
+        dui = dui.slice(0, 8) + '-' + dui.slice(8,9)
+
+    }
+    inputDUI.value = dui;
+}
+function formatoNIT() {
+    const inputNIT = document.getElementById("inputNIT");
+    let nit = inputNIT.value.replace(/\D/g, ''); 
+    if (nit.length > 4 && nit.length <= 10) {
+        nit = nit.slice(0, 4) + '-' + nit.slice(4)
+    } else if (nit.length > 10 && nit.length <= 13) { 
+        nit = nit.slice(0, 4) + '-' + nit.slice(4, 10) + '-' + nit.slice(10)
+    } else if (nit.length > 13) {
+        nit = nit.slice(0, 4) + '-' + nit.slice(4, 10) + '-' + nit.slice(10, 13) + '-' + nit.slice(13, 14)
+    }
+    inputNIT.value = nit;
+}
+

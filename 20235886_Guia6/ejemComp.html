@@ -38,49 +38,49 @@
                                 <div class="row mb-3">
                                     <label for="inputCarnet" class="col-sm-2 col-form-label">Carnet</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputCarnet" maxlength="5" />
+                                        <input type="text" class="form-control" id="inputCarnet" maxlength="5" placeholder="AB001" oninput="formatoCarnet()" required/>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputNombre" class="col-sm-2 col-form-label">Nombres</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputNombre" pattern="^[a-zA-Z]+$" />
+                                        <input type="text" class="form-control" id="inputNombre" pattern="^[a-zA-Z]+$" required/>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputApellidos" class="col-sm-2 col-form-label">Apellidos</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputApellidos" pattern="^[a-zA-Z]+$" />
+                                        <input type="text" class="form-control" id="inputApellidos" pattern="^[a-zA-Z]+$" required/>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputDUI" class="col-sm-2 col-form-label">DUI</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputDUI" pattern="^\d{8}-\d{1}$" />
+                                        <input type="text" class="form-control" id="inputDUI" placeholder="########-#" oninput="formatoDUI()" required/>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputNIT" class="col-sm-2 col-form-label">NIT</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputNIT" pattern="^\d{4}-\d{6}-\d{3}-\d{1}$" />
+                                        <input type="text" class="form-control" id="inputNIT" placeholder="####-######-###-#" oninput="formatoNIT()" required/>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputFechaNacimiento" class="col-sm-2 col-form-label">Fecha de Nacimiento</label>
                                     <div class="col-sm-10">
-                                        <input type="date" class="form-control" id="inputFechaNacimiento" />
+                                        <input type="date" class="form-control" id="inputFechaNacimiento" required/>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputCorreoElectronico" class="col-sm-2 col-form-label">Correo electrónico</label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="inputCorreoElectronico" pattern="^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$" />
+                                        <input type="email" class="form-control" id="inputCorreoElectronico" pattern="^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$" placeholder="ejemplo.correo@gmail.com"/>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEdad" class="col-sm-2 col-form-label">Edad</label>
                                     <div class="col-sm-10">
-                                        <input type="number" class="form-control" id="inputEdad" />
+                                        <input type="number" class="form-control" id="inputEdad" required/>
                                     </div>
                                 </div>
 
@@ -105,7 +105,7 @@
     </main>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/registroAcademico.js" defer></script>
+    <script src="ejemComp.js" defer></script>
 </body>
 
 </html>
